@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    background-color: black;
+}
+
+#Expensetracker
+{
+    background-color: bisque;
+    height: 70vh;
+    width: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px 50px 60px 30px;
+    border: 2px solid rgb(207, 43, 150);
+    border-radius: 5px;
+}
+
+#Yourbalance
+{
+    background-color: azure;
+    height: fit-content;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#Yourbalance > h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+#trans 
+{
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#trans > .income,.expense{
+   background-color: azure;
+   width: 50%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   
+
+}
+#trans > .income{
+    border-right: 1px solid black;
+    }
+#History
+{
+    background-color:azure;
+    display: flex;
+    justify-content: center;
+
+}
+
+#addtrans
+{
+    background-color: azure;
+}
+#addtrans > form > #radiobutt{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    height: 40%;
+    width: fit-content;
+    & > input{
+        display: none;
+    }
+    & > label{
+        background-color: brown;
+        cursor: pointer;
+        height: 100%;
+        width: 50%;
+        overflow: hidden;
+    }
+    & > input:checked+label {
+       background-color: aquamarine;
+    }
+}
+
+
+
+
+
