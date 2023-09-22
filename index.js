@@ -104,8 +104,6 @@ function onCross(event){
 
       var expe=document.querySelector("#esp");
       expe.textContent=`rs ${exp}`;
-
-
 }
 
 
